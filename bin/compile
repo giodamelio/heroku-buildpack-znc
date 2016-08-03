@@ -16,6 +16,7 @@ function indent() {
 }
 
 cd $BUILD_DIR
+ls -al
 
 # git submodules
 echo "-----> Cloning git submodules"
