@@ -20,7 +20,8 @@ ls -al
 
 # git submodules
 echo "-----> Cloning git submodules"
-git submodule update --init --recursive 2>&1 | indent
+git clone https://github.com/jimloco/Csocket.git third_party/Csocket | indent
+git clone https://github.com/google/googletest.git third_party/googletest | indent
 
 # autogen
 if [ -f autogen.sh ]; then
