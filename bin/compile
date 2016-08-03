@@ -17,6 +17,10 @@ function indent() {
 
 cd $BUILD_DIR
 
+# git submodules
+echo "-----> Cloning git submodules"
+git submodule update --init --recursive 2>&1 | indent
+
 # autogen
 if [ -f autogen.sh ]; then
   echo "-----> Running autogen.sh"
